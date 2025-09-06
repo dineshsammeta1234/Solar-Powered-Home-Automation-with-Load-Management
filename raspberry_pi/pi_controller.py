@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-# Pin config
+# Pin configeration
 relays = [17, 27, 22]  # GPIO pins for relays
 sensor_pin = 4  # Example GPIO pin for solar sensor
 
