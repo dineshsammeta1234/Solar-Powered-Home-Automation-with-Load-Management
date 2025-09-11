@@ -1,0 +1,44 @@
+[project]
+name = "solar-home-automation"
+version = "1.1.0"
+description = "Solar-Powered Home Automation with Load Management using Arduino/Raspberry Pi, relays, and sensors."
+authors = [
+    { name="Sammeta Dinesh Kumar", email="sammetadineshkumar@gmail.com" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["solar", "home-automation", "arduino", "raspberry-pi", "iot", "power-bi"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/solar-home-automation"
+Documentation = "https://github.com/yourusername/solar-home-automation/wiki"
+Issues = "https://github.com/yourusername/solar-home-automation/issues"
+LinkedIn = "https://www.linkedin.com/in/dineshsammeta"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+pandas = "^2.0.0"
+numpy = "^1.25.0"
+flask = "^3.0.0"
+requests = "^2.31.0"
+paho-mqtt = "^1.6.1"
+matplotlib = "^3.8.0"
+
+# Optional visualization
+plotly = { version = "^5.15.0", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.7.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.solar-automation]
+controller = "arduino-uno"
+optional_controller = "raspberry-pi / esp32"
+data_storage = ["CSV", "JSON", "SQLite"]
+dashboard = ["Power BI", "Grafana"]
