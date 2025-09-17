@@ -27,6 +27,32 @@ This project demonstrates a **solar-powered home automation system** that contro
 
 ---
 
+This repo includes a minimal sketch for the **solar load controller** and a **CI workflow** that compiles it using Arduino CLI.
+
+## Install Arduino CLI
+```bash
+curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+arduino-cli version
+```
+
+## Cores & board (UNO example)
+```bash
+arduino-cli core update-index
+arduino-cli core install arduino:avr
+```
+
+## Compile
+```bash
+arduino-cli compile --fqbn arduino:avr:uno arduino/sketches/solar_controller
+```
+
+## Upload (set your serial port)
+```bash
+arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:uno arduino/sketches/solar_controller
+```
+
+> If you use a different board (e.g., ESP32), install the appropriate core and update the **FQBN** in commands and CI.
+
 ## Components Required
 - Arduino Uno (or Raspberry Pi)  
 - Solar panel (5V–12V)  
