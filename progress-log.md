@@ -14,7 +14,7 @@ This log keeps a transparent record of work sessions, evidence, and releases so 
 
 ---
 
-## Objectives for v0.1.0 (48‑hour plan)
+## Objectives for v0.1.0
 - [ ] Add `pyproject.toml` or pin firmware/tooling versions (Arduino CLI/PlatformIO)
 - [ ] Add `Dockerfile` (optional) and `.env.template` (for ports/board FQBN)
 - [ ] Minimal **Arduino sketch** + **compile check** in CI (GitHub Actions)
