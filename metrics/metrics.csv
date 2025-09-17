@@ -1,0 +1,7 @@
+metric	value
+switch_latency_p50_ms	20
+switch_latency_p95_ms	52
+relay_cycles_per_30min	113.3
+min_battery_soc_pct	38
+pv_yield_wh	3.4
+energy_saved_wh	1.6
