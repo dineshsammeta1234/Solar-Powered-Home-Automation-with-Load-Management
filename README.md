@@ -93,9 +93,8 @@ For questions, collaboration, or feedback, please contact:
 - 🌐 [Portfolio](https://dineshkumarsammeta.github.io/)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/dineshsammeta)   
 
-## Circuit Diagram
+
 ## Circuit Diagram
 <img src="https://github.com/user-attachments/assets/a3c35a71-13be-41d4-a4fc-9520a1547d58" alt="Circuit Diagram" width="720" height="480">  
 
-*Include an image of your wiring diagram here.*
 
