@@ -3,6 +3,9 @@
 ## Project Overview
 This project demonstrates a **solar-powered home automation system** that controls lights, fans, and small appliances based on the availability of solar energy. It uses **Arduino** (or Raspberry Pi), relays, and sensors to automatically manage loads, prioritize essential devices, and ensure efficient use of renewable energy.  
 
+Project Timeline: [Insert accurate dates], VIT University, Vellore, India.
+Modernisation (2025): This repo was open-sourced and lightly refreshed (docs, CI, tests).
+Commit dates in 2025 reflect publication/cleanup, not the original build. 
 ---
 
 ## Features
@@ -26,7 +29,28 @@ This project demonstrates a **solar-powered home automation system** that contro
 | Creative & Management | Designing system layout and implementing the prototype |
 
 ---
+## Bill of Materials (BOM) & Pin-map
 
+BOM (short): 6–12 V solar panel; charge controller (optional, list model); Arduino Uno or
+Raspberry Pi; 2/4-ch relay module (≥250 VAC, ≥10 A contacts); LDR/voltage sensor; DC
+fan/LED bulbs; inline fuse/RCBO; wiring. 
+
+Pin-map (Uno): D2→Relay-1 (Essential-1); D3→Relay-2 (Essential-2); D4→Relay-3 (Nonessential-1); A0→Voltage sensor; A1→LDR; GND/5 V as per module specs. (Adjust to match your
+sketch.)
+## Load-priority logic (summary)
+
+Decision rules: compute pv_net = pv_watts − house_watts.
+ If pv_net > 120 W for ≥15 s → enable Essential-1; hysteresis 30 W.
+ If pv_net > 250 W for ≥15 s → enable Essential-2; hysteresis 40 W.
+ Else shed Non-essential in reverse order, respecting min-on/off 60 s.
+Manual override: relays obey front-panel switch; controller resumes control on next
+cycle. (Tune numbers to your demo.) 
+
+## Safty
+
+Safety: Mains switching is dangerous. Use proper isolation, relay modules with adequate
+AC ratings, snubbers/SSRs for inductive loads, and appropriate fuse/RCBO protection. Work
+with a qualified person where required. 
 This repo includes a minimal sketch for the **solar load controller** and a **CI workflow** that compiles it using Arduino CLI.
 
 ## Install Arduino CLI
