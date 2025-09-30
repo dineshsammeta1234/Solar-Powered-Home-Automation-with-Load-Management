@@ -3,9 +3,13 @@
 ## Project Overview
 This project demonstrates a **solar-powered home automation system** that controls lights, fans, and small appliances based on the availability of solar energy. It uses **Arduino** (or Raspberry Pi), relays, and sensors to automatically manage loads, prioritize essential devices, and ensure efficient use of renewable energy.  
 
-Project Timeline: 14/11/2013 to 16/02/2014(Part - Time), VIT University, Vellore, India.
-Modernisation (2025): This repo was open-sourced and lightly refreshed (docs, CI, tests).
+## 📅 Project Timeline 
+- **Duration:** 14/11/2013 to 16/02/2014(Part - Time)
+- **Acadamic Year:** 1st year of Electrical and Electronics Engineering
+- **Location:** VIT University, Vellore, India
+- Modernisation (2025): This repo was open-sourced and lightly refreshed (docs, CI, tests).
 Commit dates in 2025 reflect publication/cleanup, not the original build. 
+
 ---
 
 ## Features
