@@ -51,10 +51,8 @@ Manual override: relays obey front-panel switch; controller resumes control on n
 cycle. (Tune numbers to your demo.) 
 
 ## Safty
-
-Safety: Mains switching is dangerous. Use proper isolation, relay modules with adequate
-AC ratings, snubbers/SSRs for inductive loads, and appropriate fuse/RCBO protection. Work
-with a qualified person where required. 
+Safety Notice:
+Handling mains power can be hazardous. Always ensure proper electrical isolation and use relay modules with suitable AC ratings. For inductive loads, include snubbers or solid-state relays (SSRs), and ensure appropriate fuse or RCBO protection is in place. If you are not qualified, seek assistance from a certified professional.
 This repo includes a minimal sketch for the **solar load controller** and a **CI workflow** that compiles it using Arduino CLI.
 
 ## Install Arduino CLI
